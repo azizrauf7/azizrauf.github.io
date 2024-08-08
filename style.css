@@ -1,0 +1,123 @@
+/* Tema Cinta dan Ulang Tahun */
+
+body {
+    background-color: #ffcccc; /* Warna latar belakang merah muda */
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    color: #660033; /* Warna teks merah tua */
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 40px auto;
+    background-color: #ffffff; /* Warna latar belakang putih */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: transparent(-50%);
+  }
+  
+  .love-icon {
+    font-size: 24px;
+    color: #ff69b4; /* Warna ikon cinta merah muda */
+    margin-right: 10px;
+  }
+  
+  .birthday-message {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .button {
+    background-color: #ff69b4; /* Warna tombol merah muda */
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #ff99cc; /* Warna tombol hover merah muda */
+  }
+  
+  /* Efek animasi untuk tombol */
+  .button:active {
+    transform: scale(0.9);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  /* Media query untuk tampilan mobile */
+  @media (max-width: 768px) {
+    .container {
+      width: 90%;
+      margin: 20px auto;
+    }
+  }
+ /* Hiasan Kue */
+
+.cake {
+    width: 200px;
+    height: 130px;
+    background-color: #f4d2ed; /* Warna latar belakang kue */
+    border-radius: 10px;
+    position: relative;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .cake:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background-color: #ff99cc; /* Warna icing merah muda */
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .flame {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 20px;
+    background-color: #ff9900; /* Warna api oranye */
+    border-radius: 5px;
+    animation: flicker 1s infinite;
+  }
+  
+  @keyframes flicker {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1; 
+    }
+  }
+    /* Add some styles to the message */
+ .message {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ff9d9d; /* green text */
+    margin-top: 20px;
+ }
+ #flowerImage {
+  width: 400px; /* Atur ukuran bunga sesuai keinginan */
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

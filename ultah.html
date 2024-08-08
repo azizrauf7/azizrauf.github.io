@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Happy Birthday!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body background="love.jpg">
+   
+  <h1>Happy Birthday!</h1>
+  <div class="container">
+    <div class="cake">
+        <div class="icing"></div>
+        <div class="flame"></div>
+      </div>
+    <p class="birthday-message">web ini dibuat dengan sepenuh hati! hehe...</p>
+    <button id="showFlowerButton" class="button">Untuk Kak Jiyana</button>
+    <div id="flowerContainer" style="display:none;">
+        <img src="flower.png" alt="Bunga" id="flowerImage">
+    </div>
+    <p
+     class="message"></p>
+
+<script>
+  document.getElementById('showFlowerButton').addEventListener('click', function() {
+    var flowerContainer = document.getElementById('flowerContainer');
+    if (flowerContainer.style.display === 'none') {
+        flowerContainer.style.display = 'block';
+    } else {
+        flowerContainer.style.display = 'none';
+    }
+});
+
+  const button = document.querySelector('.button');
+  const messageElement = document.querySelector('.message');
+
+  button.addEventListener('click', () => {
+    messageElement.textContent = 'Selamat Ulang Tahun! Semoga setiap impian kak Jiyana menjadi kenyataan dan hidup kak jiyana dipenuhi dengan kebahagiaan dan berkah dari Allah. Aku bersyukur deh bisa kenal sama kak Jiyana dan senang rasanya bisa berbagi cerita, yaa walaupun kalau ketemu masih malu-malu hehe... tapi mohon dimaklumi, I hope we can continue sharing stories and moments together and Thank you for being a special part of my life >_<';
+  });
+</script>
+  </div>
+</body>
+</html>
